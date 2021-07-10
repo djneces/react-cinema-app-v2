@@ -1,0 +1,28 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/utils';
+
+.Seat {
+    width: 25px;
+    height: 25px;
+    border: 2px solid $color-primary;
+    border-radius: $border-radius-medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        border-color: $color-orangered;
+    }
+
+    &.booked {
+        color: transparent;
+        pointer-events: none;
+    }
+
+    &.selected {
+        background-color: $color-orangered;
+    }
+}

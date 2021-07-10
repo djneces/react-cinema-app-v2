@@ -1,0 +1,150 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/utils';
+
+.Modal {
+    &__overlay {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__body {
+        position: absolute;
+        width: 79vw;
+        max-width: 950px;
+        height: 660px;
+        background-color: darken($color-primary, 30);
+        opacity: 0.9;
+        padding: 2rem;
+        border-radius: $border-radius-large;
+        box-shadow: $box-shadow;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+            position: relative;
+            z-index: 10;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 3rem;
+                margin: 1rem;
+                text-align: right;
+            }
+        }
+
+        &-content {
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-left: auto;
+
+            span {
+                max-height: 150px;
+                overflow: scroll;
+                padding-right: 0.5rem;
+            }
+
+            &-details {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div:first-of-type {
+                    display: flex;
+                    flex-direction: column;
+
+                    span:first-of-type {
+                        margin-top: 1rem;
+                    }
+
+                    span {
+                        font-size: 0.8rem;
+                        color: darken(#fff, 20);
+                    }
+                }
+
+                div:last-of-type {
+                    margin: 1rem 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 3rem;
+                        color: $color-orangered;
+                        border-radius: 50%;
+                        cursor: pointer;
+
+                        &:hover {
+                            box-shadow: $box-shadow-orangered;
+                        }
+                    }
+                }
+
+            }
+
+            hr {
+                margin: 1rem 0;
+            }
+        }
+
+        &-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: auto;
+
+            &-poster {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                img {
+                    border-radius: $border-radius-medium 0 0 $border-radius-medium;
+                    height: 100%;
+                    max-width: 440px;
+                    max-height: 100%;
+                    object-fit: cover;
+                    opacity: 0.5;
+                }
+            }
+
+            &-iframe {
+                z-index: 10;
+                z-index: 10;
+                width: 30vw;
+                max-width: 380px;
+                height: 20vh;
+                // margin-top: 1rem;
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+
+        &-closeIcon {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            cursor: pointer;
+            transition: color $transition-time ease-in-out;
+
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+}

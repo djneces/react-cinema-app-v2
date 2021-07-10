@@ -1,0 +1,69 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/utils';
+
+.MovieItem {
+    &:hover &__poster-overlay-menu {
+        transform: translateY(0)
+    }
+
+    &__poster {
+        cursor: pointer;
+        height: 100%;
+        max-width: 195px;
+
+        &-overlay {
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: $border-radius-medium;
+
+                &.blackWhite {
+                    filter: grayscale(100%);
+                }
+            }
+
+            &-notLoaded {
+                width: 100%;
+                height: 100%;
+                background-color: $color-primary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $border-radius-medium;
+            }
+
+            &-menu {
+                position: absolute;
+                width: 100%;
+                height: 20%;
+                bottom: 0;
+                left: 0;
+                background-color: #252b3bcc;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 0 0 $border-radius-medium $border-radius-medium;
+                transform: translateY(100%);
+                transition: transform $transition-time-faster ease-in;
+
+                i {
+                    cursor: pointer;
+                    color: $color-orangered;
+                    border-radius: 50%;
+                    box-shadow: none;
+
+                    font-size: 1.8rem;
+
+                    &:hover {
+                        box-shadow: $box-shadow-orangered;
+                    }
+                }
+            }
+        }
+    }
+}

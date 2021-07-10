@@ -1,0 +1,16 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/utils';
+
+.ShowTimesDay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+
+
+    span:first-of-type {
+        width: 3rem;
+    }
+
+
+}

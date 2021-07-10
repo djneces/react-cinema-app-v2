@@ -1,0 +1,12 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/utils';
+
+.OrderHistoryPage {
+    height: 100%;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

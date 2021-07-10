@@ -1,0 +1,113 @@
+export const TICKET_PRICE = 15;
+
+export const showTimeBlocks = {
+  1: '9:00-11:00',
+  2: '11:00-13:00',
+  3: '13:00-15:00',
+  4: '15:00-17:00',
+  5: '17:00-19:00',
+  6: '19:00-21:00',
+  7: '21:00-23:00',
+};
+export const DB = {
+  movies: [
+    {
+      title: 'Wrath of Man',
+      movieId: 637649,
+      showTimes: {
+        mon: [1, 5, 6],
+        tue: [1, 5, 6],
+        wed: [1, 5, 6],
+        thu: [1, 5, 6],
+        fri: [1, 5, 6],
+        sat: [2, 4, 5, 6, 7],
+        sun: [2, 4, 5, 6, 7],
+      },
+      hall: 1,
+    },
+    {
+      title: 'Here Today',
+      movieId: 711475,
+      showTimes: {
+        mon: [3, 4, 6],
+        tue: [3, 4, 6],
+        wed: [3, 4, 6],
+        thu: [3, 4, 6],
+        fri: [3, 4, 6, 7],
+        sat: [2, 4, 6, 7],
+        sun: [2, 4, 6],
+      },
+      hall: 2,
+    },
+    {
+      title: 'Benny Loves You',
+      movieId: 647302,
+      showTimes: {
+        mon: [1, 2, 5],
+        tue: [1, 2, 5],
+        wed: [1, 2, 5],
+        thu: [1, 2, 5],
+        fri: [1, 2, 5],
+        sat: [1, 3, 5],
+        sun: [1, 3, 5],
+      },
+      hall: 2,
+    },
+    {
+      title: 'The Water Man',
+      movieId: 346687,
+      showTimes: {
+        mon: [1, 2, 5],
+        tue: [1, 2, 5],
+        wed: [1, 2, 5],
+        thu: [1, 2, 5],
+        fri: [1, 2, 5, 7],
+        sat: [1, 3, 4, 5],
+        sun: [1, 3, 4, 5],
+      },
+      hall: 3,
+    },
+    {
+      title: 'The Killing of Two Lovers',
+      movieId: 653712,
+      showTimes: {
+        mon: [6],
+        tue: [6],
+        wed: [6],
+        thu: [6],
+        fri: [6],
+        sat: [2, 6, 7],
+        sun: [2, 6],
+      },
+      hall: 3,
+    },
+    {
+      title: 'Finding You',
+      movieId: 769749,
+      showTimes: {
+        mon: [1, 4],
+        tue: [1, 4],
+        wed: [1, 4],
+        thu: [1, 4],
+        fri: [1, 4, 7],
+        sat: [1, 4],
+        sun: [1, 4, 5],
+      },
+      hall: 4,
+    },
+    {
+      title: 'The Djinn',
+      movieId: 797946,
+      showTimes: {
+        mon: [5, 6],
+        tue: [5, 6],
+        wed: [5, 6],
+        thu: [5, 6],
+        fri: [5, 6],
+        sat: [5, 6],
+        sun: [6, 7],
+      },
+      hall: 4,
+    },
+  ],
+};

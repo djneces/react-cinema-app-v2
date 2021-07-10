@@ -1,0 +1,16 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/utils';
+
+.OutstandingInvoice {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+    width: 100%;
+
+    i {
+        color: $color-red;
+    }
+
+
+}

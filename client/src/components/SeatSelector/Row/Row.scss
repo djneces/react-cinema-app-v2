@@ -1,0 +1,14 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/utils';
+
+.Row {
+
+    display: flex;
+    align-items: center;
+
+    span {
+        width: 1rem;
+        margin-right: 1rem;
+        color: lighten($color-primary, 10);
+    }
+}

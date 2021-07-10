@@ -1,0 +1,67 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/utils';
+
+.CustomBtnFull {
+    background-color: $color-orangered;
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: $box-shadow-orangered;
+    transition: all $transition-time ease-out;
+    display: flex;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            span {
+                font-size: 1rem;
+                color: $color-red;
+                width: auto;
+            }
+        }
+    }
+
+    &:hover {
+        border: 2px solid $color-red;
+        box-shadow: none;
+    }
+
+    &.w-30 {
+        max-width: 30vw;
+    }
+
+    &.h-10 {
+        max-height: 10px;
+        font-size: 0.9rem;
+        text-transform: initial;
+        padding: 0.5rem 1rem;
+    }
+
+    &.primaryLight {
+        background-color: darken($color-primary-light, 30);
+        box-shadow: none;
+
+        &:hover {
+            border: 2px solid $color-primary;
+        }
+    }
+
+    &.disabled {
+        background-color: grey;
+        pointer-events: none;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,73 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/utils';
+
+.AddOnItem {
+    width: 33.33333%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
+        display: block;
+        object-fit: cover;
+    }
+
+    &__selectBtn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #252b3bcc;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform $transition-time-faster ease-in;
+
+        h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        small {
+            position: relative;
+            position: relative;
+            align-self: flex-start;
+            margin-left: 2.5rem;
+
+            &::after {
+                content: '';
+                width: 18vw;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+            }
+        }
+
+        &-sizes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            margin-top: 2rem;
+        }
+    }
+
+}

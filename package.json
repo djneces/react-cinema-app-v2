@@ -1,0 +1,26 @@
+{
+  "name": "my-cinema-app-server",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.17.0",
+    "npm": "7.15.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "2.8.5",
+    "dotenv": "7.0.0",
+    "express": "^4.16.4",
+    "stripe": "6.28.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.19.1"
+  }
+}

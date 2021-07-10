@@ -1,0 +1,43 @@
+@import '../../../../assets/styles/colors';
+@import '../../../../assets/styles/utils';
+
+.ItemSizeSelector {
+
+    div:first-of-type {
+        display: flex;
+    }
+
+    &__size {
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: $color-orangered;
+        font-weight: bold;
+    }
+
+    &__price {
+        span {
+            font-weight: bold;
+            margin-left: 0.4rem;
+        }
+    }
+
+    &__quantity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        font-size: 2rem;
+
+        i {
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform $transition-time-faster ease-in;
+
+            &:hover {
+                color: $color-orangered;
+                transform: scale(1.2);
+            }
+        }
+    }
+}

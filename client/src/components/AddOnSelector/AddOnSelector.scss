@@ -1,0 +1,13 @@
+@import '../../assets/styles/colors';
+@import '../../assets/styles/utils';
+
+.AddOnSelector {
+    width: 75vw;
+    height: 32vh;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
