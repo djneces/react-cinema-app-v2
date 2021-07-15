@@ -6,6 +6,7 @@
     width: 100%;
     position: relative;
     overflow-x: hidden;
+    margin-top: $margin-top-header;
 
     img {
         position: absolute;
@@ -46,7 +47,7 @@
         }
 
         &-subheading {
-            margin-bottom: 8rem;
+            margin-bottom: 15vh;
             margin-left: 1rem;
             font-size: 1.8rem;
             text-transform: uppercase;

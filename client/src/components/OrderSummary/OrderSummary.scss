@@ -7,6 +7,7 @@
 
     &__review {
         width: 30vw;
+        max-width: 345px;
         height: 22vh;
         min-height: 215px;
         border: 1px solid $color-primary-light;
@@ -21,10 +22,13 @@
         @media (max-width: 1366px) {
             min-height: 180px;
             margin-bottom: 1.5rem;
+            padding: 1rem;
+            width: 34vw;
         }
 
         @media (max-width: 768px) {
-            height: 16vh;
+            height: 24vh;
+            min-height: 280px;
         }
 
         h2 {

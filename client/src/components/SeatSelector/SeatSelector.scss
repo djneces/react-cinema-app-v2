@@ -3,6 +3,7 @@
 
 .SeatSelector {
     width: 55vw;
+    max-width: 735px;
     height: 79vh;
     min-height: 710px;
     border-radius: $border-radius-large;
@@ -15,6 +16,10 @@
     @media (max-width: 1200px) {
         width: 95%;
         margin-bottom: 2rem;
+    }
+
+    @media (max-width: 1200px) {
+        height: 55vh;
     }
 
     .SpinnerDots {
