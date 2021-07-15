@@ -4,13 +4,13 @@
 .PaymentPage {
     height: 100%;
     width: 100%;
-    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     overflow: scroll;
     position: relative;
+    margin-top: $margin-top-header;
 
     h2 {
         text-align: center;
@@ -28,6 +28,10 @@
         flex-direction: column;
         overflow-y: scroll;
         overflow-x: hidden;
+
+        @media (max-width: 1100px) {
+            width: 95%;
+        }
 
         .SpinnerDots {
             align-self: center;

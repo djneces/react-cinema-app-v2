@@ -18,6 +18,15 @@
         padding: 1rem 2rem;
         margin-bottom: 3rem;
 
+        @media (max-width: 1366px) {
+            min-height: 180px;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            height: 16vh;
+        }
+
         h2 {
             text-align: center;
             width: 100%;
@@ -44,6 +53,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+
+            @media (max-width: 1100px) {
+                height: 77%;
+            }
 
             img {
                 width: auto;

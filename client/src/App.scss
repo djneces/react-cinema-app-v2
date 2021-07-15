@@ -12,8 +12,9 @@ body {
     background-color: $color-black;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 
     a {
         text-decoration: none;
@@ -27,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: $border-radius-medium;
-    height: 96vh;
+    min-height: 100vh;
     width: 97vw;
 }
 

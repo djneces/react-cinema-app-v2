@@ -3,11 +3,11 @@
 
 .Header {
     width: 100%;
-    height: 8vh;
+    height: $margin-top-header;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    position: relative;
+    position: absolute;
 
     &__logo {
         cursor: pointer;
@@ -16,6 +16,11 @@
         align-items: center;
         justify-content: center;
         padding-left: 3rem;
+
+        @media (max-width: 375px) {
+            padding: 0 0.5rem;
+            height: 80%;
+        }
 
         a {
             height: 70%;

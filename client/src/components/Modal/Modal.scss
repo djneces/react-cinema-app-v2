@@ -28,6 +28,12 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media (max-width: 1200px) {
+            width: 96vw;
+            max-width: 970px;
+            height: 75vh;
+        }
+
         &-title {
             position: relative;
             z-index: 10;
@@ -116,6 +122,11 @@
                     max-height: 100%;
                     object-fit: cover;
                     opacity: 0.5;
+                    margin-right: 0.5rem;
+
+                    @media (max-width: 1100px) {
+                        max-width: 350px;
+                    }
                 }
             }
 
@@ -125,7 +136,11 @@
                 width: 30vw;
                 max-width: 380px;
                 height: 20vh;
-                // margin-top: 1rem;
+
+                @media (max-width: 1100px) {
+                    width: 44vw;
+                    max-width: 450px;
+                }
 
                 iframe {
                     width: 100%;

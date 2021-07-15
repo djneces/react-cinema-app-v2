@@ -12,6 +12,11 @@
     align-items: center;
     position: relative;
 
+    @media (max-width: 1200px) {
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+
     .SpinnerDots {
         height: 20px;
         position: absolute;

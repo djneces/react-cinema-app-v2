@@ -24,6 +24,10 @@
         flex-direction: column;
         padding: 3rem;
 
+        @media (max-width: 375px) {
+            padding: 1rem;
+        }
+
         &-heading {
             h1 {
                 text-transform: Uppercase;
@@ -33,6 +37,11 @@
                 text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 1px 1px 19px rgba(255, 255, 255, 0.54);
                 margin-bottom: 1rem;
                 margin-top: 4rem;
+
+
+                @media (max-width: 900px) {
+                    font-size: 20vw;
+                }
             }
         }
 
@@ -60,6 +69,12 @@
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+
+        @media (max-width: 669px) {
+            flex-direction: column;
+            align-items: flex-start;
+            height: 5rem;
+        }
 
         &-socialMedia {
 

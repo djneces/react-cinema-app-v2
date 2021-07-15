@@ -8,5 +8,13 @@
     display: flex;
     justify-content: space-around;
     overflow-x: hidden;
+    margin-top: $margin-top-header;
+    margin-bottom: 8vh;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
 }
